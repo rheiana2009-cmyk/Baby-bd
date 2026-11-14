@@ -2083,7 +2083,7 @@ function pickUpPhone(){
  $("phoneHandset").classList.add("picked");$("phoneWire").classList.add("picked");
  $("phoneRingText").textContent="♡ A voice message from me is playing...";
  const voice=$("voiceMessage");
- if(voice){voice.currentTime=0;voice.play().then(()=>{voice.onended=()=>{$("phoneRingText").textContent="That's my little message for you. I love you. ♡";};}).catch(()=>{$("phoneRingText").textContent="Add your recording as voice-message.mp3, then tap play on your browser. ♡";});}
+ if(voice){voice.currentTime=0;voice.play().then(()=>{voice.onended=()=>{$("phoneRingText").textContent="That's my little message for you. I love you. ♡";};}).catch(()=>{$("phoneRingText").textContent="voice-message.mp3, then tap play on your browser. ♡";});}
 }
 
 /* SIDEWAYS INFINITE MEMORY CAROUSEL */
